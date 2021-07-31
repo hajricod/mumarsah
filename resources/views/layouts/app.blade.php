@@ -34,6 +34,28 @@
             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
         </div>
     <![endif]-->
+    <style>
+        .row-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .row-flex .col-md-4 {
+            background: whitesmoke!important;
+            padding: 0 0 10px 0
+        }
+
+        .statemnts h5 {
+            font-size: 20px;
+            margin: 10px 0;
+            font-weight: 700;
+            padding: 0 10px;
+        }
+
+        .statemnts p {
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     
@@ -44,8 +66,8 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="left-header">
-                                <span><i class="fa fa-phone"></i><a href="">+968 96600300</a></span>
-                                <span><i class="fa fa-envelope"></i>info@mumarsah.com</span>
+                                <span><i class="fa fa-phone"></i><a href="tel:+96896600300">+968 96600300</a></span>
+                                <span><i class="fa fa-envelope"></i><a href="mailto:info@mumarsah.com">info@mumarsah.com</a></span>
                             </div> <!-- /.left-header -->
                         </div> <!-- /.col-md-6 -->
                         <div class="col-md-6 col-sm-6">
@@ -284,12 +306,62 @@
                 <h2>About Us</h2>
                 <span></span>
             </div> <!-- /.title-section -->
+
+            {{-- <div class="row row-flex"> --}}
+                <div class="our-team row statemnts">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5" style="margin-right: 10px">
+                        <div class="team-member">
+                            <img src="{{asset('images/mission.png')}}" alt="mission" style="height: 300px">
+                            <div class="">
+                                <h5>Mission</h5>
+                                <p>To develop and support a portfolio of products and services that enable SMEs to improve their performance and to benefit from the implementation of quality management system.</p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-5">
+                        <div class="team-member">
+                            <img src="{{asset('images/vision.jpg')}}" alt="vision" style="height: 300px">
+                            <div class="">
+                                <h5>Vision</h5>
+                                <p>To become a leading certification body known locally and recognized as trustworthy company.</p>
+                            </div>
+                        </div> <!-- /.team-member -->
+                    </div> <!-- /.col-md-4 -->
+                    <div class="col-md-1"></div>
+                </div> <!-- /.our-team -->
+            {{-- </div> --}}
+
+            {{-- <div class="row">
+                <div class="col">
+                    <h4 class="widget-title">Mission</h4>
+                    <p>
+                        To develop and support a portfolio of products and services that enable SMEs to improve their performance and to benefit from the implementation of quality management system.
+                    </p>
+                </div>
+            </div>
+            
+            <br />
+
             <div class="row">
+                <div class="col">
+                    <h4 class="widget-title">Vision</h4>
+                    <p>
+                        To become a leading certification body known locally and recognized as trustworthy company
+                    </p>
+                </div>
+            </div> --}}
+
+            <hr />
+            <br />
+
+            {{-- <div class="row">
+                
                 <div class="col">
                     <h4 class="widget-title">Company Background</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ex, amet, quisquam magni quasi modi sint accusamus architecto velit veritatis nobis autem repellat dolore quis atque totam laudantium ab sed impedit beatae esse error culpa voluptatem eius et. <br><br>Aut, nulla, debitis voluptates doloribus quisquam maiores repudiandae nam culpa voluptatibus alias earum magnam numquam. Consectetur, ratione, ipsam totam et nesciunt atque temporibus fuga quos rem deserunt tempore dolore eaque dolorum a doloremque optio nihil pariatur aliquid ex id officiis aliquam sed.</p>
                 </div> <!-- /.col-md-3 -->
-                {{-- <div class="col-md-4 our-skills">
+                <div class="col-md-4 our-skills">
                     <h4 class="widget-title">Our Skills</h4>
                     <ul class="progess-bars">
                         <li>
@@ -313,9 +385,9 @@
                             </div>
                         </li>
                     </ul>
-                </div> --}}
+                </div>
                  <!-- /.col-md-3 -->
-            </div> <!-- /.row -->
+            </div> <!-- /.row --> --}}
             <div class="row">
                 <div class="our-team">
                     <div class="col-md-4 col-sm-6">
@@ -328,7 +400,8 @@
                                         <li><a href="#" class="fa fa-twitter"></a></li>
                                         <li><a href="#" class="fa fa-instagram"></a></li>
                                     </ul>
-                                </div> <!-- /.overlay -->
+                                </div> 
+                                <!-- /.overlay -->
                             </div>
                             <div class="inner-content">
                                 <h5>Name</h5>

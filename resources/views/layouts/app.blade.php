@@ -17,11 +17,13 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
     <!-- CSS Bootstrap & Custom -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/templatemo-misc.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/templatemo-main.css">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
         
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
@@ -29,6 +31,7 @@
     <!-- JavaScripts -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/modernizr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <!--[if lt IE 8]>
 	<div style=' clear: both; text-align:center; position: relative;'>
             <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
@@ -72,7 +75,7 @@
                         </div> <!-- /.col-md-6 -->
                         <div class="col-md-6 col-sm-6">
                             <div class="right-header text-right">
-                                <ul class="social-icons">
+                                <ul class="social-icons py-3">
                                     <li><a href="#" class="fa fa-facebook"></a></li>
                                     <li><a href="#" class="fa fa-instagram"></a></li>
                                     <li><a href="#" class="fa fa-twitter"></a></li>
@@ -97,7 +100,7 @@
                                 <ul>
                                     <li><a href="#home">Home</a></li>
                                     <li><a href="#services">Services</a></li>
-                                    <li><a href="#portfolio">Portfolio</a></li>
+                                    {{-- <li><a href="#portfolio">Portfolio</a></li> --}}
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#contact">Contact</a></li>
                                     <li><a href="#" class="external">External</a></li>
@@ -111,7 +114,7 @@
                             <ul>
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#services">Services</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
+                                {{-- <li><a href="#portfolio">Portfolio</a></li> --}}
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#contact">Contact</a></li>
                                 <li><a href="#" class="external">External</a></li>
@@ -126,19 +129,25 @@
     <div class="flexslider">
         <ul class="slides">
             <li>
-                <img src="images/banner01.jpg" alt="">
+                <img src="images/banner001.jpg" alt="matrah">
                 <div class="flex-caption">
                     <h2>Mumarsah</h2>
-                    <span></span>
-                    <p>Praesent tincidunt neque semper elementum gravida. Donec id euismod magna.<br>Ut erat ligula, malesuada eu quam a, fringilla auctor augue.</p>
+                    {{-- <span></span> --}}
+                    {{-- <p>Praesent tincidunt neque semper elementum gravida. Donec id euismod magna.<br>Ut erat ligula, malesuada eu quam a, fringilla auctor augue.</p> --}}
                 </div>
             </li>
             <li>
-                <img src="images/banner02.jpg" alt="">
+                <img src="images/banner002.jpg" alt="salalah">
                 <div class="flex-caption">
-                    <h2>Responsive Mobile</h2>
-                    <span></span>
-                    <p>Ea, similique, odit id consectetur est beatae quia dicta officiis ipsam itaque in<br>facilis aliquid quas officia voluptatem repellendus repellat!</p>
+                    {{-- <h2>Responsive Mobile</h2>
+                    <span></span> --}}
+                    {{-- <p>Ea, similique, odit id consectetur est beatae quia dicta officiis ipsam itaque in<br>facilis aliquid quas officia voluptatem repellendus repellat!</p> --}}
+                </div>
+            </li>
+            <li>
+                <img src="images/banner003.jpg" alt="nizwa-fort">
+                <div class="flex-caption">
+                    
                 </div>
             </li>
         </ul>
@@ -150,7 +159,7 @@
                 <h2>Our Services</h2>
                 <span></span>
             </div> <!-- /.title-section -->
-            <div class="row">
+            {{-- <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="service-item">
                         <div class="service-header">
@@ -195,11 +204,15 @@
                         </div>
                     </div> <!-- /.service-item -->
                 </div> <!-- /.col-md-3 -->
-            </div> <!-- /.row -->
+            </div>  --}}
+            @include('../services')
+            
+            
+            <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /#services -->
 
-    <div id="portfolio" class="section-content">
+    {{-- <div id="portfolio" class="section-content">
         <div class="container">
             <div class="title-section text-center">
                 <h2>Our Portfolio</h2>
@@ -298,7 +311,8 @@
                 </div> <!-- /.col-md-3 -->
             </div> <!-- /.row -->
         </div> <!-- /.container -->
-    </div> <!-- /#portfolio -->
+    </div> --}}
+     <!-- /#portfolio -->
 
     <div id="about" class="section-cotent">
         <div class="container">
@@ -352,7 +366,7 @@
                 </div>
             </div> --}}
 
-            <hr />
+            {{-- <hr /> --}}
             <br />
 
             {{-- <div class="row">
@@ -388,7 +402,7 @@
                 </div>
                  <!-- /.col-md-3 -->
             </div> <!-- /.row --> --}}
-            <div class="row">
+            {{-- <div class="row">
                 <div class="our-team">
                     <div class="col-md-4 col-sm-6">
                         <div class="team-member">
@@ -449,7 +463,8 @@
                         </div> <!-- /.team-member -->
                     </div> <!-- /.col-md-4 -->
                 </div> <!-- /.our-team -->
-            </div> <!-- /.row -->
+            </div> --}}
+             <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /#about -->
 
@@ -489,10 +504,10 @@
                         </div>
                     </div> <!-- /.map-holder -->
                     <div class="contact-info">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, modi, non ducimus nesciunt in commodi similique aliquam omnis ea at!</p>
-                        <span><i class="fa fa-home"></i>850 In luctus justo vel nisi, Duis mattis 10440</span>
-                        <span><i class="fa fa-phone"></i>080-080-0990</span>
-                        <span><i class="fa fa-envelope"></i>info@company.com</span>
+                        <p></p>
+                        <span><i class="fa fa-home"></i>Muscat, Oman</span>
+                        <span><i class="fa fa-phone"></i><a href="tel:+96896600300">+968 96600300</a></span>
+                        <span><i class="fa fa-envelope"></i><a href="mailto:info@mumarsah.com">info@mumarsah.com</a></span>
                     </div>
                 </div> <!-- /.col-md-3 -->
             </div> <!-- /.row -->
@@ -521,13 +536,14 @@
     <script src="js/plugins.js"></script>
     <script src="js/jquery.lightbox.js"></script>
     <script src="js/custom.js"></script>
+
     <script type="text/javascript">
 
         function initialize() {
           var mapOptions = {
 			  scrollwheel: false,
-            zoom: 15,
-            center: new google.maps.LatLng(13.758468,100.567481)
+            zoom: 8,
+            center: new google.maps.LatLng(23.587166104642005,58.396535445556644)
           };
 
           var map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -537,7 +553,7 @@
         function loadScript() {
           var script = document.createElement('script');
           script.type = 'text/javascript';
-          script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+          script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyAuZrnztWCgUk-b7Mn3NL9RVG_SIB2pj3g&v=3.exp&sensor=false&' +
               'callback=initialize';
           document.body.appendChild(script);
         }

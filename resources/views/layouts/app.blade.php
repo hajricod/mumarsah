@@ -73,7 +73,7 @@
                                 <span><i class="fa fa-envelope"></i><a href="mailto:info@mumarsah.com">info@mumarsah.com</a></span>
                             </div> <!-- /.left-header -->
                         </div> <!-- /.col-md-6 -->
-                        <div class="col-md-6 col-sm-6">
+                        {{-- <div class="col-md-6 col-sm-6">
                             <div class="right-header text-right">
                                 <ul class="social-icons py-3">
                                     <li><a href="#" class="fa fa-facebook"></a></li>
@@ -82,7 +82,7 @@
                                     <li><a href="#" class="fa fa-google-plus"></a></li>
                                 </ul>
                             </div> <!-- /.left-header -->
-                        </div> <!-- /.col-md-6 -->
+                        </div> <!-- /.col-md-6 --> --}}
                     </div> <!-- /.row -->
                 </div> <!-- /.container -->
             </div> <!-- /.top-header -->
@@ -103,7 +103,7 @@
                                     {{-- <li><a href="#portfolio">Portfolio</a></li> --}}
                                     <li><a href="#about">About</a></li>
                                     <li><a href="#contact">Contact</a></li>
-                                    <li><a href="#" class="external">External</a></li>
+                                    {{-- <li><a href="#" class="external">External</a></li> --}}
                                 </ul>
                             </div> <!-- /.menu -->
                         </div> <!-- /.col-md-8 -->

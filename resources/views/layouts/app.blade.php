@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> 
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
 <![endif]-->
-<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> 
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
 <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="{{ str_replace('_', '-', app()->getLocale()) }}"> <!--<![endif]-->
@@ -24,10 +24,10 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/templatemo-main.css">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-        
+
     <!-- Favicons -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
-    
+
     <!-- JavaScripts -->
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/modernizr.js"></script>
@@ -59,9 +59,10 @@
             padding: 10px;
         }
     </style>
+    @livewireStyles
 </head>
 <body>
-    
+
     <div id="home">
         <div class="site-header">
             <div class="top-header">
@@ -147,7 +148,7 @@
             <li>
                 <img src="images/banner003.jpg" alt="nizwa-fort">
                 <div class="flex-caption">
-                    
+
                 </div>
             </li>
         </ul>
@@ -206,8 +207,8 @@
                 </div> <!-- /.col-md-3 -->
             </div>  --}}
             @include('../services')
-            
-            
+
+
             <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /#services -->
@@ -354,7 +355,7 @@
                     </p>
                 </div>
             </div>
-            
+
             <br />
 
             <div class="row">
@@ -370,7 +371,7 @@
             <br />
 
             {{-- <div class="row">
-                
+
                 <div class="col">
                     <h4 class="widget-title">Company Background</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ex, amet, quisquam magni quasi modi sint accusamus architecto velit veritatis nobis autem repellat dolore quis atque totam laudantium ab sed impedit beatae esse error culpa voluptatem eius et. <br><br>Aut, nulla, debitis voluptates doloribus quisquam maiores repudiandae nam culpa voluptatibus alias earum magnam numquam. Consectetur, ratione, ipsam totam et nesciunt atque temporibus fuga quos rem deserunt tempore dolore eaque dolorum a doloremque optio nihil pariatur aliquid ex id officiis aliquam sed.</p>
@@ -414,7 +415,7 @@
                                         <li><a href="#" class="fa fa-twitter"></a></li>
                                         <li><a href="#" class="fa fa-instagram"></a></li>
                                     </ul>
-                                </div> 
+                                </div>
                                 <!-- /.overlay -->
                             </div>
                             <div class="inner-content">
@@ -475,28 +476,8 @@
                 <span></span>
             </div> <!-- /.title-section -->
             <div class="row">
-                <div class="col-md-7 col-sm-6">
-                    <h4 class="widget-title">Send a message to us</h4>
-                    <div class="contact-form">
-                        <p class="full-row">
-                            <label for="name-id">Your Name:</label>
-                            <input type="text" id="name-id" name="name-id">
-                        </p>
-                        <p class="full-row">
-                            <label for="email-id">Email:</label>
-                            <input type="text" id="email-id" name="email-id">
-                        </p>
-                        <p class="full-row">
-                            <label for="subject-id">Subject:</label>
-                            <input type="text" id="subject-id" name="subject-id">
-                        </p>
-                        <p class="full-row">
-                            <label for="message">Message:</label>
-                            <textarea name="message" id="message" rows="6"></textarea>
-                        </p>
-                        <input class="mainBtn" type="submit" name="" value="Send Message">
-                    </div>
-                </div> <!-- /.col-md-3 -->
+                <livewire:contact-form />
+                <!-- /.col-md-3 -->
                 <div class="col-md-5 col-sm-6">
                     <h4 class="widget-title">Our location</h4>
                     <div class="map-holder">
@@ -560,6 +541,6 @@
 
         window.onload = loadScript;
     </script>
-
+    @livewireScripts
 </body>
 </html>

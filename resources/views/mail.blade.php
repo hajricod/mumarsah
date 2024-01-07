@@ -1,0 +1,12 @@
+<table>
+<tr>
+<td>
+<b>{{$name}}</b>
+</td>
+</tr>
+<tr>
+<td>
+{{$data}}
+</td>
+</tr>
+</table>

@@ -5,6 +5,23 @@ p {
 
 /* override */
 
+a {
+    color: var(--bs-orange)
+}
+
+.mainBtn {
+    background-color: var(--bs-orange);
+}
+
+.title-section span {
+    background: var(--bs-orange);
+}
+
+.main-header .menu ul li a.current {
+    background: var(--bs-orange);
+    color: white;
+}
+
 .accordion-button:not(.collapsed) {
     color: #484a4c;
     background-color: #ededed;
@@ -17,4 +34,14 @@ p {
 
 .accordion-button:focus {
     box-shadow: none;
+}
+
+.responsive-menu {
+    top: -30px;
+}
+
+@media only screen and (max-width: 760px) {
+    .logo img {
+        width: 3rem;
+    }
 }
